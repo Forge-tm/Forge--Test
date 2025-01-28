@@ -1,0 +1,46 @@
+name: Node.js Setup and Deployment
+
+on:
+  push:
+    branches:
+      - main
+      
+  workflow_dispatch:
+    inputs:
+      your-input-name:
+        description: 'Your input description'
+        required: false
+
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install Git
+        run: |
+          sudo apt-get update && sudo apt-get install git
+      - name: Install dependencies
+        run: |
+          npm install moment simple-git random jsonfile
+
+
+
+      - name: Configure Git
+        run: |
+          git config --global user.name "gtbbeseller"
+          git config --global user.email "cuongpm014@gmail.com"
+
+      - name: Push changes
+        run: |
+          git push -f origin main
+
+      - name: Run Node.js script
+        run: |
+          node index.js
