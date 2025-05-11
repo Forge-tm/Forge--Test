@@ -1,1 +1,36 @@
-{"date":"2021-12-29T18:42:19+00:00"}
+// styles.css
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f5f5f5;
+  color: #333;
+}
+
+header {
+  background: #2b2b2b;
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.features {
+  padding: 2rem;
+  background: #fff;
+  border-radius: 8px;
+  margin: 2rem;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #eaeaea;
+}
+
+// script.js
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Forge website loaded');
+});
+
+// README.md
+# Forge
