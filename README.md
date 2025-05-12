@@ -65,7 +65,7 @@
 - 🌐 Web Game Client  
 - 📜 Early Access Signup  
 
-**Follow us:** [Twitter/X](https://x.com/forgeonsolana)  
+**Follow us:** [Twitter/X]([https://x.com/forgeonsolana]  
 
 ---
 
