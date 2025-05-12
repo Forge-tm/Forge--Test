@@ -1,36 +1,21 @@
-// styles.css
-body {
-  margin: 0;
-  font-family: Arial, sans-serif;
-  background: #f5f5f5;
-  color: #333;
+{
+  "$schema": "https://ui.shadcn.com/schema.json",
+  "style": "default",
+  "rsc": true,
+  "tsx": true,
+  "tailwind": {
+    "config": "tailwind.config.ts",
+    "css": "app/globals.css",
+    "baseColor": "neutral",
+    "cssVariables": true,
+    "prefix": ""
+  },
+  "aliases": {
+    "components": "@/components",
+    "utils": "@/lib/utils",
+    "ui": "@/components/ui",
+    "lib": "@/lib",
+    "hooks": "@/hooks"
+  },
+  "iconLibrary": "lucide"
 }
-
-header {
-  background: #2b2b2b;
-  color: #fff;
-  padding: 2rem;
-  text-align: center;
-}
-
-.features {
-  padding: 2rem;
-  background: #fff;
-  border-radius: 8px;
-  margin: 2rem;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-}
-
-footer {
-  text-align: center;
-  padding: 1rem;
-  background: #eaeaea;
-}
-
-// script.js
-document.addEventListener('DOMContentLoaded', () => {
-  console.log('Forge website loaded');
-});
-
-// README.md
-# Forge
